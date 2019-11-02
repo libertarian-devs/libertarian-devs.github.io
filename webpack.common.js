@@ -12,7 +12,7 @@ module.exports = {
 	target: 'web',
 	output: {
 		filename: '[name].[hash].bundle.js',
-		path: path.join(__dirname, 'home'),
+		path: path.join(__dirname, 'site'),
 	},
 	plugins: [
 		new CleanWebpackPlugin(),
@@ -29,7 +29,7 @@ module.exports = {
 		rules: [
 			{
 				test: /\.html$/,
-				include: path.join(__dirname, 'source'),
+				include: path.join(__dirname, 'src'),
 				loaders: ['html-loader'],
 			},
 			{
