@@ -1,0 +1,12 @@
+# node modules
+node_modules
+
+# cypress 
+cypress/**/example*
+cypress/integration/examples
+cypress/screenshots
+cypress/videos
+
+# nyc
+.nyc_output
+coverage

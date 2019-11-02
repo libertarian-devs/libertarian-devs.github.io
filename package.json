@@ -1,0 +1,73 @@
+{
+  "name": "libertariandevs.github.io",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --hot --inline --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "deploy": "gh-pages -d build",
+    "test": "nyc mocha src/**/*.test.js --require @babel/register --timeout=3000",
+    "cy:ci": "start-server-and-test start http://localhost:3000 cy:record",
+    "cy:open": "./node_modules/.bin/cypress open",
+    "cy:run": "./node_modules/.bin/cypress run",
+    "cy:record": "./node_modules/.bin/cypress run --record",
+    "eslint": "eslint --format 'node_modules/eslint-friendly-formatter' src/ cypress/ webpack.common.js webpack.dev.js webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/libertarian-devs/libertariandevs.github.io.git"
+  },
+  "author": "gusjasponde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/libertarian-devs/libertariandevs.github.io/issues"
+  },
+  "homepage": "https://github.com/libertarian-devs/libertariandevs.github.io",
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-spread": "^7.6.2",
+    "@material-ui/core": "^4.5.1",
+    "@material-ui/icons": "^4.5.1",
+    "axios": "^0.19.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "i18next": "^17.3.0",
+    "i18next-browser-languagedetector": "^4.0.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-i18next": "^10.13.1",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "toastr": "^2.1.4",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.0",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "chai": "^4.2.0",
+    "cypress": "^3.4.1",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "eslint": "^6.5.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-cypress": "^2.7.0",
+    "eslint-plugin-react": "^7.16.0",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-mock-store": "^1.5.3",
+    "start-server-and-test": "^1.10.6",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
+  }
+}

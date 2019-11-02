@@ -1,0 +1,17 @@
+{
+	"home" : {
+		"sections" : {
+			"projects": "Projects",
+			"about" : "About",
+			"gpg" : "GPG"
+		},
+		"footer" : {
+			"contact" : "Contact",
+			"media" : "Media"
+		}
+	},
+	"error" : {
+		"githubInfo": "Error loading Github info",
+		"githubRepos": "Error loading Github repositories"
+	}
+}
