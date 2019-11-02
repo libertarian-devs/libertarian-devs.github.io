@@ -1,5 +1,5 @@
 {
-  "name": "libertariandevs.github.io",
+  "name": "libertarian-devs.github.io",
   "version": "1.0.0",
   "description": "Personal website",
   "main": "index.js",
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/libertarian-devs/libertariandevs.github.io.git"
+    "url": "git+https://github.com/libertarian-devs/libertarian-devs.github.io.git"
   },
   "author": "gusjasponde",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/libertarian-devs/libertariandevs.github.io/issues"
+    "url": "https://github.com/libertarian-devs/libertarian-devs.github.io/issues"
   },
-  "homepage": "https://github.com/libertarian-devs/libertariandevs.github.io",
+  "homepage": "https://github.com/libertarian-devs/libertarian-devs.github.io",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/plugin-transform-spread": "^7.6.2",
