@@ -12,7 +12,7 @@ module.exports = {
 	target: 'web',
 	output: {
 		filename: '[name].[hash].bundle.js',
-		path: path.join(__dirname, 'site'),
+		path: path.join(__dirname, 'home'),
 	},
 	plugins: [
 		new CleanWebpackPlugin(),
