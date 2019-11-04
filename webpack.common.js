@@ -1,7 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
 	entry: {
@@ -10,12 +9,7 @@ module.exports = {
 		],
 	},
 	target: 'web',
-	output: {
-		filename: '[name].[hash].bundle.js',
-		path: path.join(__dirname, 'site'),
-	},
 	plugins: [
-		new CleanWebpackPlugin(),
 		new HtmlWebpackPlugin({
 			title: 'Libertarian Devs | Github',
 			filename: 'index.html',
