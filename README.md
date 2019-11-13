@@ -13,7 +13,7 @@ Organization website:  https://libertarian-devs.github.io
 ```
 npm run start: starts development server
 npm run build: builds project
-npm run test: "nyc mocha src/**/*.test.js --require @babel/register --timeout=3000",
+npm run test: runs unit tests,
 npm run cy:open: opens cypress for functional tests development
 npm run cy:run: runs functional tests
 npm run eslint: lints code
